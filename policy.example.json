@@ -1,0 +1,11 @@
+{
+  "whitelist": [
+    "jsonwebtoken@8.5.2",
+    "my-internal-tool@*"
+  ],
+  "blacklist": [
+    "canvas-confetti",
+    "left-pad@1.0.0",
+    "@evil/scope-pkg@1.2.3"
+  ]
+}
