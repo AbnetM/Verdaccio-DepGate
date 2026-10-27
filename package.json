@@ -1,0 +1,50 @@
+{
+  "name": "verdaccio-depgate",
+  "version": "1.0.0",
+  "description": "Verdaccio middleware: block blacklisted and Critical (OSV) npm packages on tarball download",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@verdaccio/config": "8.0.0-next-8.30",
+    "@verdaccio/core": "8.0.0-next-8.30",
+    "axios": "^1.13.6",
+    "debug": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/debug": "4.1.12",
+    "@types/express": "4.17.25",
+    "@types/jsonwebtoken": "9.0.10",
+    "@types/node": "25.0.9",
+    "@verdaccio/auth": "8.0.0-next-8.30",
+    "@verdaccio/types": "13.0.0-next-8.10",
+    "typescript": "5.9.3"
+  },
+  "keywords": [
+    "verdaccio",
+    "verdaccio-plugin",
+    "middleware",
+    "security",
+    "osv",
+    "supply-chain",
+    "npm",
+    "vulnerability"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbnetM/Verdaccio-DepGate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AbnetM/Verdaccio-DepGate/issues"
+  },
+  "homepage": "https://github.com/AbnetM/Verdaccio-DepGate#readme",
+  "author": "Abnet M.",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
